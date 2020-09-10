@@ -22,9 +22,9 @@ const Logo = ({
         <Link to="/">
           <Image
             src={require('./../../../assets/images/logo.svg')}
-            alt="Open"
-            width={32}
-            height={32} />
+            alt="nick dyar logo"
+            width={90}
+            height={30} />
         </Link>
       </h1>
     </div>

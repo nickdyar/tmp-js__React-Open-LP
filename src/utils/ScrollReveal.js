@@ -4,7 +4,7 @@ import { throttle } from 'lodash';
 
 const ScrollReveal = React.forwardRef((props, ref) => {
 
-  const [viewportHeight, setViewportheight] = useState(window.innerHeight); 
+  const [viewportHeight, setViewportheight] = useState(window.innerHeight);
   const [revealEl, setRevealel] = useState([]);
 
   const checkComplete = () => {
@@ -38,7 +38,7 @@ const ScrollReveal = React.forwardRef((props, ref) => {
     init() {
       setRevealel(document.querySelectorAll('[class*=reveal-]'));
     }
-  }));  
+  }));
 
   useEffect(() => {
     if (typeof revealEl !== 'undefined' && revealEl.length > 0) {
@@ -70,7 +70,7 @@ const ScrollReveal = React.forwardRef((props, ref) => {
     handleListeners();
     revealElements();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [viewportHeight]);  
+  }, [viewportHeight]);
 
   return (
     <>
